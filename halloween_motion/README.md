@@ -27,8 +27,15 @@ pip3 install pydub
 * PyDub: https://github.com/jiaaro/pydub
 
 ## PIR
-Passive Infra Red 
-https://www.tweaking4all.com/hardware/pir-sensor/
+Passive Infra Red Sensor
+
 [Stemedu HC-SR501 PIR Sensor](https://www.amazon.com/gp/product/B07KBWVJMP/ref=ppx_yo_dt_b_asin_title_o08_s00?ie=UTF8&psc=1)
 
+### Pin Out
+![](./images/pir1.png)
 
+### Potentiometer Settings
+![](./images/pir2.png)
+
+### Documentation
+https://www.tweaking4all.com/hardware/pir-sensor/
