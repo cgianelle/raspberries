@@ -52,3 +52,10 @@ Motion detection triggers audio playback, which then triggers a random sleep. I 
 immediately again after playback completes as this was intended to run on Halloween night and we tend to get a lot of kids, so there was
 plenty of motion to set it off. I wanted there to be an element of surprise, so after playback, I waited before going back to the 
 detect motion state.
+
+## Wiring Diagram
+![](./images/circuit.png)
+
+* Waiting for Motion state turns on a RED LED (GPIO16) on entry and off on exit
+* Waiting for Motion state monitors for motion using GPIO4
+* Playing Audio state turns on a YELLOW LED (GPIO17) on entry and off on exit
