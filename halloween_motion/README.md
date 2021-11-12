@@ -39,3 +39,16 @@ Passive Infra Red Sensor
 
 ### Documentation
 https://www.tweaking4all.com/hardware/pir-sensor/
+
+### Trigger Setting
+I set the trigger for this project to H as I wanted the timer on the trigger to restart each time motion was detected, otherwise
+the PIR won't retrigger again until the timer expires (as is the case in the L setting).
+
+## SW Design
+Simple Gang of 4 State Machine pattern
+![](./images/halloween.png)
+
+Motion detection triggers audio playback, which then triggers a random sleep. I added a sleep state because I didn't want this firing 
+immediately again after playback completes as this was intended to run on Halloween night and we tend to get a lot of kids, so there was
+plenty of motion to set it off. I wanted there to be an element of surprise, so after playback, I waited before going back to the 
+detect motion state.
