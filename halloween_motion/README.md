@@ -59,3 +59,17 @@ detect motion state.
 * Waiting for Motion state turns on a RED LED (GPIO16) on entry and off on exit
 * Waiting for Motion state monitors for motion using GPIO4
 * Playing Audio state turns on a YELLOW LED (GPIO17) on entry and off on exit
+
+## Linux and SystemD
+This will enable the motion detection app to start when the Pi boots up
+* Copy `systemd/motion.service` to the Pi's /etc/systemd/system/ folder.
+* Then run the following from a terminal to get the service running
+~~~~
+sudo systemctl daemon-reload
+sudo systemctl enable motion.service
+sudo systemctl start motion.service
+~~~~
+* To stop the service
+~~~~
+sudo systemctl stop motion.service
+~~~~
