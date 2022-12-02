@@ -1,0 +1,17 @@
+---
+gcp_iot:
+  cloud_region: "us-central1"
+  project_id: "newliberty-iot-sandbox"
+  registry_id: "new_liberty_way_1086_basement"
+  device_id: "office_temp"
+  mqtt:
+    mqtt_bridge_hostname: "mqtt.googleapis.com"
+    mqtt_bridge_port: 8883
+certs:
+  algorithm: "RS256"
+  private_key_file: "./certs/rsa_office_private.pem"
+  ca_certs_file: "./certs/roots.pem"
+temp_sensor_name: "28-3c01d0758640"
+zone_location: "office"
+message_type: "event"
+reporting_frequency_seconds: 30.0 
